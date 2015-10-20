@@ -8,13 +8,14 @@
 
 import UIKit
 
-class NavigationController: UINavigationController, UINavigationControllerDelegate {
+class NavigationController: UINavigationController, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
     
     var currentOperation = UINavigationControllerOperation.None
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        self.interactivePopGestureRecognizer?.delegate = self
     }
     
     // MARK: UINavigationControllerDelegate
@@ -24,7 +25,9 @@ class NavigationController: UINavigationController, UINavigationControllerDelega
         return nil
     }
     
-    func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        return nil
+    // MARK: UIGestureRecognizerDelegate
+    
+    func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
 }
