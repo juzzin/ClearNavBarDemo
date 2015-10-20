@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gSR-Ez-h8G">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Normal-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Day" translatesAutoresizingMaskIntoConstraints="NO" id="tH6-Wl-kcC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tH6-Wl-kcC" secondAttribute="trailing" id="7So-cd-YEp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tH6-Wl-kcC" secondAttribute="bottom" id="X4v-oz-TCs"/>
+                            <constraint firstItem="tH6-Wl-kcC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kh4-sG-jax"/>
+                            <constraint firstItem="tH6-Wl-kcC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qtQ-sw-Fdr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Normal" id="bfl-5z-xk3">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="bC8-9O-JWc">
+                            <connections>
+                                <segue destination="4mX-ee-Iuz" kind="show" id="CD5-NY-3u5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="429"/>
+        </scene>
+        <!--Transparent-->
+        <scene sceneID="mBE-kz-15f">
+            <objects>
+                <viewController id="4mX-ee-Iuz" customClass="DuViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W07-DJ-MDP"/>
+                        <viewControllerLayoutGuide type="bottom" id="jYX-5h-Wqt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fr4-0a-996">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Night" translatesAutoresizingMaskIntoConstraints="NO" id="CXl-e9-q2H">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.29599341750144958" green="0.31701639294624329" blue="0.35188829898834229" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CXl-e9-q2H" secondAttribute="trailing" id="5FJ-7h-va3"/>
+                            <constraint firstItem="jYX-5h-Wqt" firstAttribute="top" secondItem="CXl-e9-q2H" secondAttribute="bottom" id="Ce5-Fg-HXU"/>
+                            <constraint firstItem="CXl-e9-q2H" firstAttribute="leading" secondItem="fr4-0a-996" secondAttribute="leading" id="K9s-HT-D6C"/>
+                            <constraint firstItem="CXl-e9-q2H" firstAttribute="top" secondItem="W07-DJ-MDP" secondAttribute="bottom" id="VeM-72-veX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transparent" id="f1Z-57-dTx">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="4nv-hk-yN0">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="KTS-qZ-Sdm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iA7-IW-sar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RRK-Vz-DVG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gSR-Ez-h8G" customClass="NavigationController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nr0-iS-Tx0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R60-zW-Z7K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xu2-NL-qRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Day" width="375" height="667"/>
+        <image name="Night" width="375" height="667"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R60-zW-Z7K"/>
+    </inferredMetricsTieBreakers>
+</document>
