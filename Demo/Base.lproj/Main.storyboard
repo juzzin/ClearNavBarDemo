@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Normal-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClearNavBarDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -30,7 +30,17 @@
                             <constraint firstItem="tH6-Wl-kcC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qtQ-sw-Fdr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Normal" id="bfl-5z-xk3">
+                    <navigationItem key="navigationItem" id="bfl-5z-xk3">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="axr-sL-5ze">
+                            <rect key="frame" x="211" y="7" width="178" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <segments>
+                                <segment title="Demo"/>
+                                <segment title="😀"/>
+                            </segments>
+                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="bC8-9O-JWc">
                             <connections>
                                 <segue destination="4mX-ee-Iuz" kind="show" id="CD5-NY-3u5"/>
@@ -42,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="1116" y="429"/>
         </scene>
-        <!--Transparent-->
+        <!--😁-->
         <scene sceneID="mBE-kz-15f">
             <objects>
-                <viewController id="4mX-ee-Iuz" customClass="DuViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4mX-ee-Iuz" customClass="DuViewController" customModule="ClearNavBarDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W07-DJ-MDP"/>
                         <viewControllerLayoutGuide type="bottom" id="jYX-5h-Wqt"/>
@@ -68,7 +78,7 @@
                             <constraint firstItem="CXl-e9-q2H" firstAttribute="top" secondItem="W07-DJ-MDP" secondAttribute="bottom" id="VeM-72-veX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Transparent" id="f1Z-57-dTx">
+                    <navigationItem key="navigationItem" title="😁" id="f1Z-57-dTx">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="4nv-hk-yN0">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="KTS-qZ-Sdm"/>
@@ -84,7 +94,7 @@
         <!--Navigation Controller-->
         <scene sceneID="RRK-Vz-DVG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gSR-Ez-h8G" customClass="NavigationController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gSR-Ez-h8G" customClass="NavigationController" customModule="ClearNavBarDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nr0-iS-Tx0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -106,6 +116,6 @@
         <image name="Night" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R60-zW-Z7K"/>
+        <segue reference="KTS-qZ-Sdm"/>
     </inferredMetricsTieBreakers>
 </document>
