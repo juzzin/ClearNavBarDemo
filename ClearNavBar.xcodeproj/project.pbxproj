@@ -118,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D015D4FA1BD3669C00D8127E /* Build configuration list for PBXProject "ClearNavBarDemo" */;
+			buildConfigurationList = D015D4FA1BD3669C00D8127E /* Build configuration list for PBXProject "ClearNavBar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -293,7 +293,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D015D4FA1BD3669C00D8127E /* Build configuration list for PBXProject "ClearNavBarDemo" */ = {
+		D015D4FA1BD3669C00D8127E /* Build configuration list for PBXProject "ClearNavBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D015D50F1BD3669C00D8127E /* Debug */,
