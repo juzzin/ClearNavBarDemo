@@ -17,6 +17,11 @@ class SecondViewController: ClearViewController {
             self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
             self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
             }, completion: nil)
+        
+        transitionCoordinator()?.notifyWhenInteractionEndsUsingBlock({ (context) -> Void in
+            self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+            self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        })
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -26,10 +31,15 @@ class SecondViewController: ClearViewController {
             self.navigationController?.navigationBar.tintColor = nil
             self.navigationController?.navigationBar.titleTextAttributes = nil
             }, completion: { context in
-                if context.isCancelled() == true {
-                    self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-                    self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
-                }
+//                if context.isCancelled() == true {
+//                    self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+//                    self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+//                }
+        })
+        
+        transitionCoordinator()?.notifyWhenInteractionEndsUsingBlock({ (context) -> Void in
+            self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+            self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         })
     }
     

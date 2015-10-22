@@ -46,6 +46,7 @@
 		D015D4F61BD3669C00D8127E = {
 			isa = PBXGroup;
 			children = (
+				D0F41D991BD8D9BE002D93D1 /* ClearNavBar */,
 				D015D5011BD3669C00D8127E /* Demo */,
 				D015D5001BD3669C00D8127E /* Products */,
 			);
@@ -66,14 +67,21 @@
 				D015D5021BD3669C00D8127E /* AppDelegate.swift */,
 				D015D5041BD3669C00D8127E /* ViewController.swift */,
 				D015D5141BD3676200D8127E /* SecondViewController.swift */,
-				D0CCA7FC1BD8B3E3008D0155 /* ClearViewController.swift */,
-				D015D5181BD6387D00D8127E /* SlidingBarHandler.swift */,
-				D0CCA7FA1BD7633A008D0155 /* GhostBarHandler.swift */,
 				D015D5061BD3669C00D8127E /* Main.storyboard */,
 				D015D50B1BD3669C00D8127E /* LaunchScreen.storyboard */,
 				D015D50E1BD3669C00D8127E /* Info.plist */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		D0F41D991BD8D9BE002D93D1 /* ClearNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				D0CCA7FC1BD8B3E3008D0155 /* ClearViewController.swift */,
+				D015D5181BD6387D00D8127E /* SlidingBarHandler.swift */,
+				D0CCA7FA1BD7633A008D0155 /* GhostBarHandler.swift */,
+			);
+			path = ClearNavBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
