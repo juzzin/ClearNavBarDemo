@@ -8,13 +8,7 @@
 
 import UIKit
 
-enum NavigationBarPosition : Int {
-    case Center
-    case Left
-    case Right
-}
-
-class NavigationBarTransitionHandler: NSObject {
+class GhostBarHandler: NSObject {
     
     let kNavBarTag = 1234
     
@@ -38,7 +32,7 @@ class NavigationBarTransitionHandler: NSObject {
                 return
         }
         
-        guard let navigationController = navigationController as? NavigationController else {
+        guard let navigationController = navigationController else {
             print("Navigation controller must be an instance of the NavigationController class.")
             return
         }
@@ -46,14 +40,14 @@ class NavigationBarTransitionHandler: NSObject {
 //        CATransaction.begin()
 //        CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
         
-        switch navigationController.currentOperation {
-        case .Push:
-            positionNavigationBar(origBar, position: .Left)
-        case .Pop:
-            positionNavigationBar(origBar, position: .Right)
-        default:
-            print("😐")
-        }
+//        switch navigationController.currentOperation {
+//        case .Push:
+//            positionNavigationBar(origBar, position: .Left)
+//        case .Pop:
+//            positionNavigationBar(origBar, position: .Right)
+//        default:
+//            print("😐")
+//        }
         
 //        // Get frame of original bar
 //        var frame = origBar.frame
@@ -112,21 +106,21 @@ class NavigationBarTransitionHandler: NSObject {
 //            }
 //        }
         
-        guard let navigationController = navigationController as? NavigationController else {
+        guard let navigationController = navigationController else {
             print("Navigation controller must be an instance of the NavigationController class.")
             return
         }
         
         CATransaction.begin()
         CATransaction.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
-        switch navigationController.currentOperation {
-        case .Push:
-            positionNavigationBar(origBar, position: .Right)
-        case .Pop:
-            positionNavigationBar(origBar, position: .Left)
-        default:
-            print("😐")
-        }
+//        switch navigationController.currentOperation {
+//        case .Push:
+//            positionNavigationBar(origBar, position: .Right)
+//        case .Pop:
+//            positionNavigationBar(origBar, position: .Left)
+//        default:
+//            print("😐")
+//        }
         CATransaction.commit()
         
         positionNavigationBar(origBar, position: .Center)
